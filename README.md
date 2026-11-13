@@ -2,9 +2,9 @@
 
 A quiet tray icon for [Claws Mail](https://www.claws-mail.org/). The icon blinks while you have unread mail, and you can tuck Claws Mail away in the tray. It shows no popups, plays no sounds and sends no notifications.
 
-![Tray icon: blue when there's no unread mail, coral when there is](docs/screenshots/tray.png)
+![Tray icon: green when there's no unread mail, coral when there is](docs/screenshots/tray.png)
 
-When there's unread mail, the icon switches between coral and blue. When everything is read, it stays blue. The icon is drawn at whatever size your tray uses, so it stays sharp on any panel.
+When there's unread mail, the icon switches between coral and green. When everything is read, it stays green. The icon is drawn at whatever size your tray uses, so it stays sharp on any panel.
 
 ## Features
 

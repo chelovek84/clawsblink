@@ -234,8 +234,8 @@ static void icons_free(void)
 	g_clear_object(&pix_unread);
 }
 
-/* Icon colours (0xRRGGBB). The idle blue matches the network tray icon. */
-#define NOMAIL_COLOR   0x33A4FF   /* tray blue */
+/* Icon colours (0xRRGGBB). Idle is green so it is not mistaken for Telegram's blue icon. */
+#define NOMAIL_COLOR   0x2DBE6C   /* emerald green */
 #define UNREAD_COLOR   0xFF6B4A   /* coral */
 
 /* Split 0xRRGGBB into 0..1 channels; 'k' > 0 mixes towards white,
@@ -368,7 +368,7 @@ static void icon_set(GdkPixbuf *p)
 static gboolean blink_cb(gpointer data)
 {
 	blink_on = !blink_on;
-	/* alternate between the unread (coral) and idle (blue) icons */
+	/* alternate between the unread (coral) and idle (green) icons */
 	icon_set(blink_on ? pix_unread : pix_nomail);
 	return G_SOURCE_CONTINUE;
 }
